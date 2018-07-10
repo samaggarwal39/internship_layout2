@@ -1,0 +1,42 @@
+  .btn-circle-lg{
+      width: 42px;
+
+      height: 45px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 17px;
+      line-height: 2.00;
+      border-radius: 43px; 
+
+        }
+         body
+   {
+    font-family: Ubuntu, sans-serif;
+   }
+   .p1{
+    margin: 32px 71px 18px;
+    font-size: 12px;
+    line-height: 2;
+   }
+   .p2
+   {
+     margin: 12px 95px 1px;
+    font-size: 0.85em;
+    margin-top: -7px;
+    font-size: 12px;
+   }
+   .s1{
+    padding-right: 695px;
+   }
+   @media(max-width: 768px)
+{
+  p.caption1{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 10px;
+  }
+}

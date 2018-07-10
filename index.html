@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular&subset=Latin,Cyrillic">
+  <style type="text/css">
+
+  	p.caption1{
+        background: transparent;
+bottom: 0;
+color: #fff;
+font-family: sans-serif;
+font-size: 1.5em;
+left: 0;
+padding: 15px 20px;
+position: absolute;
+right: 0;
+z-index: 10000;
+text-align: right;
+letter-spacing: 2px;
+      }
+  	.btn-circle-lg{
+      width: 42px;
+
+      height: 45px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 17px;
+      line-height: 2.00;
+      border-radius: 43px; 
+
+        }
+   .jumbotron{
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 72px;
+  background-color:#f6cd00;
+}
+.bt1
+  {
+     width: 166px;
+
+      height: 158px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 25px;
+      line-height: 2.00;
+      border-radius: 116px;
+      background-color: #f2f2f2;  
+  }
+  .bt1:hover,.bt1:focus
+  {
+  	background-color: #f6cd00;
+  }
+  .bt2
+  {
+     width:168px;
+      height: 158px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 25px;
+      line-height: 2.00;
+      border-radius: 116px; 
+      background-color: #f2f2f2; 
+  }
+  .bt2:hover, .bt2:focus
+  {
+  	background-color: #f6cd00;
+  }
+  .bt3
+  {
+     width:168px;
+      height: 158px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 25px;
+      line-height: 2.00;
+      border-radius: 116px;  
+      background-color: #f2f2f2;
+  }
+  .bt3:hover,.bt3:focus
+  {
+  	background-color: #f6cd00;
+  }
+  .bt4
+  {
+
+     width:168px;
+      height: 158px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 25px;
+      line-height: 2.00;
+      border-radius: 116px; 
+      background-color: #f2f2f2; 
+  
+  }
+  .bt4:hover,.bt4:focus
+  {
+  	background-color: #f6cd00;
+  }
+  .left carousel-control:hover,.left carousel-control:focus{
+  	background-color: none;}
+  	.left carousel-control:hover,.left carousel-control:focus{
+  	background-color: none;}
+  
+    .carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.onebyone-carosel .active.left { left: -33.33%; }
+.onebyone-carosel .active.right { left: 33.33%; }
+.onebyone-carosel .next { left: 33.33%; }
+.onebyone-carosel .prev { left: -33.33%; }
+p.caption2{
+	margin-left: -3px;
+    /* margin-top: 11px; */
+    margin-bottom: -21px;
+    font-size: 24px;
+}
+.wrapper{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	height: 250px;
+	width: 100%;
+	z-index: 3;
+}
+.content{
+	background-color: #f6cd01;
+	position:absolute;
+	float: right;
+	z-index: 2;
+	width: 30%;
+	height: 88%;
+	color: #333;
+	font-size: 14px;
+	padding: 10px;
+	border-bottom-right-radius: 203px;
+	border-bottom-left-radius: 89px;
+    border-bottom: 72px;
+}
+.map
+{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	z-index: 1;
+}
+.p1{
+     margin: 32px 73px 18px;
+    font-size: 11px;
+    line-height: 2;
+}
+.p2
+{
+    margin: 12px 95px 1px;
+    font-size: 0.85em;
+    margin-top: -7px;
+    font-size: 12px;
+}
+@media(max-width: 768px)
+{
+  p.caption1{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .p1{
+    font-size: 11px;
+  }
+  .p2{
+    font-size: 11px;
+  }
+}
+  </style>
+  <script type="text/javascript">
+  	$(document).ready(function () {
+    $('#myCarousel').carousel({
+        interval: 10000
+    })
+    $('.fdi-Carousel .item').each(function () {
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        if (next.next().length > 0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        }
+        else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+});
+  </script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-5">
+			
+      <ul  class="nav navbar-nav" style="list-style-type: disc;background-color: #f6cd00; margin-left: -15px;border-bottom-right-radius: 54px;float: left;">
+    <li><a href="login.html" style="color: #333;">LOGIN</a></li>
+    <li><a href="register.html" style="color: #333;">SIGNUP</a></li>
+  
+</ul>
+		</div>
+		<div class="col-lg-3">
+			
+		</div>
+		<div class="col-lg-4">
+			<nav class="navbar navbar-inverse" style="float: right;background-color: #f6cd00;border:none;color: #333;border-bottom-left-radius: 50px;font-size: 12px;padding-right: 15px;margin-right: -15px;padding-left: 15px;">
+      <ul  class="nav navbar-nav" style="list-style-type: disc;">
+    <li><a href="#" style="color: #333;">PARENTS</a></li>
+    <li><a href="#" style="color: #333;">STAFF</a></li>
+    <li><a href="#" style="color: #333;">STUDENTS</a></li>
+</ul>
+</nav>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<h5 style="margin-top: 35px;">E-mail:<span>postbox@stfrancis.cc</span></h5>
+				<h5>Telephone:01922 740 300</h5>
+			</div>
+			<div class="col-lg-4">
+				 <a href="" style="text-decoration: none;text-transform: none;text-shadow: none;text-decoration-style: none;transition-property: none;text-anchor: none;">
+    <img src="images/Capture.png" style="width: 389px; height: 105px;"></a>
+			</div>
+			<div class="col-lg-4">
+			<br>
+				<div style="float: right;margin-right: 31px;padding-top: 10px;letter-spacing: 10.5px; ">
+					 <button type="button" class="btn btn-circle-lg" ><span><i class="fa fa-facebook"></i></span></button>  
+                     <button type="button" class="btn btn-circle-lg" ><span><i class="fa fa-twitter"></i></span></button>
+                     <button type="button" class="btn btn-circle-lg" ><span><i class="fa fa-share"></i></span></button>
+                     <button type="button" class="btn btn-circle-lg" ><span><i class="fa fa-search"></i></span></button>
+				</div>
+			</div>
+		</div>
+         <br>		
+		<div class="row">
+               <nav>
+  <div class="navbar-header">
+  <button type="button" class="navbar-toggle btn btn-default btn-lg" data-toggle="collapse" data-target="#myNavbar1" style="text-decoration-color: blue;">
+       <span class="glyphicon glyphicon-th-list"></span> 
+  </button>
+  <div class="collapse navbar-collapse" id="myNavbar1" style="
+    background-color: #eaeaea;border: 0px;    border-top: 3px solid #f6cd00;padding-right:664px;border-bottom: 1px; ">
+  <ul class="nav navbar-nav">
+    <li><a href="index.html" style="color: #5c5053;">HOME</a></li>
+     <li class="dropdown"><a href="#" style="color: #5c5053;" class="dropdown-toggle" data-toggle="dropdown">ABOUT US<span class="caret"></span></a>   
+     <ul class="dropdown-menu">
+       <li><a href="#" style="color: #5c5053;">ABOUT SCHOOL</a></li>
+       <li><a href="internal.html" style="color: #5c5053;">CHAIRMAN'S MESSAGE</a></li>
+       <li><a href="#" style="color: #5c5053;">PRINCIPAL'S MESSAGE</a></li>
+       <li><a href="#" style="color: #5c5053;">CBSE INFO</a></li>
+     </ul>
+
+     </li>
+     <li class="dropdown"><a href="#" style="color: #5c5053;" class="dropdown-toggle" data-toggle="dropdown">ACADEMICS<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+     <li><a href="#" style="color: #5c5053;">OUR CURRICULUM</a></li>
+       <li><a href="#" style="color: #5c5053;">SYLLABUS</a></li>
+       <li><a href="#" style="color: #5c5053;">RESULTS</a></li>
+     </ul>
+      </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #5c5053;">ADMISSIONS<span class="caret"></span></a><ul class="dropdown-menu">
+      <li><a href="#">ADMISSION PROCEDURE</a></li>
+       <li><a href="#">ADMISSION ENQUIRY</a></li>
+     </ul></li>
+    <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #5c5053;">GALLERY<span class="caret"></span></a><ul class="dropdown-menu">
+      <li><a href="gallery.html">IMAGE GALLERY</a></li>
+       <li><a href="#">VIDEO GALLERY</a></li>
+       <li><a href="#">IN MEDIA</a></li>
+     </ul></li>
+     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #5c5053;">CONTACT US<span class="caret"></span></a><ul class="dropdown-menu">
+      <li><a href="#" style="color: #5c5053;">REACH US</a></li>
+       <li><a href="contact.html" style="color: #5c5053;">FEEDBACK</a></li>
+     </ul></li>
+  </ul>
+  </div>
+  </div>
+  </nav>
+		
+		</div>
+		<div class="row">
+
+  <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+     <ol class="carousel-indicators">
+      <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel1" data-slide-to="1"></li>
+      <li data-target="#myCarousel1" data-slide-to="2"></li>
+      <li data-targer="#myCarousel1" data-slide-to="3"></li>
+      <li data-target="#myCarousel1" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/s1.jpg" alt="img1" style="width:100%;">
+        <div class="carousel-caption">
+          <p class="caption1">'India's top co-educational school'.
+            <span class="cap-i">The Times</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/s2.jpg" alt="img2" style="width:100%;">
+        <div class="carousel-caption">
+          <p class="caption1">'India's most forward-thinking school.'
+            <span class="cap-i">The Week</span>
+          </p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/s3.jpg" alt="img3" style="width:100%;">
+        <div class="carousel-caption">
+          <p class="caption1">'39 Oxbridge offers in 2016'
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/s4.jpg" alt="img4" style="width:100%;">
+        <div class="carousel-caption">
+          <p class="caption1">Combining academic excellence, innovative and inspiring teaching, and a wealth of extra-curricular activities
+          </p>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+</div>
+		<div class="row">
+  <div class="jumbotron" style="border-radius: 0px;">
+    
+    <h1 style="text-align: center;font-style: italic;font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 6.25em;
+    font-weight: normal;
+    line-height: 1;color: #555;">-Nil Satis Optimum-</h1>
+    <br>
+    <h5 style="text-align: center;font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.25em;
+    font-weight: normal;
+    line-height: 1;color: #555;">"Only the best is good enough"</h5>
+  </div>
+  </div>
+  <br>
+    <div class="container">
+        <div class="row">
+                
+                    <div id="myCarousel" class="carousel fdi-Carousel slide">
+                     <!-- Carousel items -->
+                        <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+                            <div class="carousel-inner onebyone-carosel">
+                                <div class="item active">
+                                    <div class="col-md-4">
+                                        <a href="#"><img src="images/img1.jpg" class="img-responsive center-block" style="max-width: 260px;min-height: 250px;">
+                                         <div class="carousel-caption">
+                                         	<p class="caption2">EVENT 1</p>
+                                         </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#"><img src="images/img2.jpg" class="img-responsive center-block" style="max-width: 260px;min-height: 250px;">
+                                          <div class="carousel-caption">
+                                         	<p class="caption2">EVENT 2</p>
+                                         </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#"><img src="images/img3.jpg" class="img-responsive center-block" style="max-width: 260px;min-height: 250px;">
+                                        <div class="carousel-caption">
+                                         	<p class="caption2">EVENT 3</p>
+                                         </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#"><img src="images/img4.jpg" class="img-responsive center-block" style="max-width: 260px;min-height: 250px;">
+                                          <div class="carousel-caption">
+                                         	<p class="caption2">EVENT 4</p>
+                                         </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#"><img src="images/img5.jpg" class="img-responsive center-block" style="max-width: 260px;min-height: 250px;">
+                                           <div class="carousel-caption">
+                                         	<p class="caption2">EVENT 5</p>
+                                         </div>
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-4">
+                                        <a href="#"><img src="images/img6.jpg" class="img-responsive center-block" style="width: 260px;height: 250px;">
+                                         <div class="carousel-caption">
+                                         	<p class="caption2">EVENT 6</p>
+                                         </div>
+                                        </a>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#eventCarousel" data-slide="prev" style="background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);color: #5c5053;">
+                            	<span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#eventCarousel" data-slide="next" style="background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0, 0, 0, 0) 100%);color: #5c5053;">
+                            	<span class="glyphicon glyphicon-chevron-right" ></span>
+      <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!--/carousel-inner-->
+                    </div><!--/myCarousel-->
+                <!--/well-->
+        </div>
+    </div>
+    <hr>
+    <!--
+<div class="container">
+  <div class="row">
+  	 <div id="myCarousel1" class="carousel slide" data-ride="carousel" style="width: 30%;margin-left: 400px;">
+
+    <!-- Wrapper for slides -->
+    <!--
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+        	<div class="col-sm-6" style="background-color: #f6cd00;width: 50%;padding: 19px;">
+        			<h4 style="text-align: center;font-size: 60px;letter-spacing: 9px;color: white;">0|3</h4>
+        			<p style="text-align: center;color: white;">July</p>
+        		
+        	</div>
+        	<div class="col-sm-6"  style="width: 50%;background-color: #f2f2f2;padding-bottom: 85px;">
+        		<h4>Transition Day</h4>
+        		<p >Year 6 Transition visits</p>
+        	</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row" >
+        	<div class="col-sm-6" style="background-color: #f6cd00;width: 50%;padding: 19px;padding-left: 50px;">
+        			<h4 style="text-align: center;font-size: 60px;color: white;letter-spacing: 9px;" >0|7</h4>
+        			<p style="text-align: center;color: white;">July</p>
+        		
+        	</div>
+        	<div class="col-sm-6" style="width: 50%;background-color: #f2f2f2;padding-bottom: 85px;">
+        		<h4 >Sports Day</h4>
+        		<p>SFA Annual Sports Day</p>
+        	</div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="row">
+        	<div class="col-sm-6" style="background-color: #f6cd00;width: 50%;padding: 19px;">
+        			<h4 style="text-align: center;font-size: 60px;color: white;letter-spacing: 9px;">0|9</h4>
+        			<p style="text-align: center;color: white;">July</p>
+        		
+        	</div>
+        	<div class="col-sm-6"  style="width: 50%;background-color: #f2f2f2;padding-bottom: 85px;">
+        		<h4>Year 13 Leavers</h4>
+        		<p>Year 13 leaver's party</p>
+        	</div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+  </div>
+  </div>
+ </div> 	
+
+-->
+
+  <div class="row">
+
+ <div style="
+height:300px; 
+background-size:cover;  
+background: url(images/back.jpg)  no-repeat center 60%;">
+<div class="col-lg-3">
+  
+</div>
+    <div class="col-lg-6">
+    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+    
+    <div  class="carousel-inner cl1">
+         <div class="item active" >
+             <br>
+             <br>
+             <br>
+             <center><button type="button" class="btn bt1"><span>btn1</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <button type="button" class="btn-circle bt2" style="border:none;"><span>btn2</span>
+             </button></center>
+             </div>
+          <div class="item">
+                 <br>
+                 <br>
+                 <br>
+                 <center><button type="button" class="btn bt3"><span>btn3</span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <button type="button" class="btn bt4"><span>btn4</span>
+             </button></center>
+            </div>
+            </div>
+          
+    </div>
+   </div>
+   <div class="col-lg-3"></div>
+  </div>
+  </div>
+ 
+  <br>
+ <br>
+<div>
+ 	<p style="text-align: center;letter-spacing: 2px;">FIND US</p>
+ 	<center><span class="glyphicon glyphicon-chevron-down" style="font-size: 28px;line-height: 0px;color: #f6cd01;top: 7px;"></span></center>
+ </div>
+  <div class="row margin">
+   <div class="wrapper">
+   	
+ 
+   <div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.0202046229438!2d77.31867631441791!3d28.659113689629674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb1ea82d62c5%3A0xbf181c5d0b40712c!2sEdunext+Technologies+Pvt.+Ltd.+-+School+Management+Software+and+Mobile+App!5e0!3m2!1sen!2sin!4v1498736693124" width="600" height="300" frameborder="0" style="border:0;width: 100%;" allowfullscreen></iframe>
+  </div>
+  <div class="content" style="text-transform: uppercase;">
+  	<h3>DIRECTIONS</h3>
+  	<span class="glyphicon glyphicon-map-marker" style="margin: 20px 10px 0 0;"></span>Edunext texhnologies Pvt. Ltd
+  	<br>
+  	<span  style="margin: 20px 10px 0 0;text-transform: none;"></span>Ghaziabad, Uttar Pradesh
+  </div>
+</div>
+  </div>
+  </div>
+
+  
+  
+  <div class="container-fluid">
+  	<div class="row" style="
+    height: auto;
+    border-top: 1px solid #bdb5b7;
+    background-color: #f2f2f2;
+    min-height: 100px;">
+
+      <div class="col-lg-6">
+      <ul type="none" style="margin-top: 21px;">
+      <li><span class="glyphicon glyphicon-earphone" style="top: 7px;font-size: x-large;"></span>Telephone:<strong>01922</strong><strong> </strong><strong>740 330</strong></li>
+      <li style="margin-left: 222px;
+    margin-top: -29px;"><span class="glyphicon glyphicon-envelope" style="font-size: x-large;top: 7px;"></span>&nbsp;Email:&nbsp;<strong>postbox@stfrancis.cc</strong></li></ul>
+      <p><div style="float: left;margin-right: 31px;padding-top: 10px;letter-spacing: 10.5px;padding-left: 38px; ">
+           <button type="button" class="btn btn-circle-lg" style="width: 34px;
+
+      height: 34px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 17px;
+      line-height: 2.00;
+      border-radius: 43px;background-color: white; " ><span><i class="fa fa-facebook"></i></span></button>  
+                     <button type="button" class="btn btn-circle-lg" style="width: 34px;
+
+      height: 34px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 17px;
+      line-height: 2.00;
+      border-radius: 43px;background-color: white; "><span><i class="fa fa-twitter"></i></span></button>
+                     <button type="button" class="btn btn-circle-lg" style="width: 34px;
+
+      height: 34px;
+      text-align: center;
+      padding:0px 0;
+      font-size: 17px;
+      line-height: 2.00;
+      border-radius: 43px; background-color: white;"><span><i class="fa fa-share"></i></span></button>
+                     
+        </div></p>
+        
+      </div>
+      <div class="col-lg-1">
+        <div class="hidden-md hidden-sm"></div>
+      </div>
+      <div class="col-lg-5 clearfix">
+        <div  class=" row p1" ><a href="" style="text-decoration: none;color: #5c5053;padding: 5px;">VACANCIES</a> <span style="font-size: 12px;">&bull;</span><a href="" style="text-decoration: none;color: #5c5053;padding: 5px">ACCESSIBILITY</a><span style="font-size: 12px;">&bull;</span><a href="" style="text-decoration: none;color: #5c5053;padding: 5px;">SITEMAP</a> <span style="font-size: 12px;">&bull;</span><a href="" style="text-decoration: none;color: #5c5053;padding: 5px;">COOKIES</a><span style="font-size: 12px"> &bull;</span> <a href="" style="text-decoration: none;color: #5c5053;padding: 5px;">DISCLAIMER</a></div>
+        <div class="row p2"><span style="color:#5c5053;padding: 5px;">© St Francis of Assisi</span><span style="font-size: 12px;">&bull;</span><span style="padding: 5px;">School Web Design by School Website</span></div>
+      </div>
+    </div>
+
+  
+ 
+
+
+     
+</div>
+</body>
+</html>
